@@ -15,7 +15,7 @@
 (function () {
     'use strict';
     var O = window.location.href;
-    var P = /http[s]{0,1}:\/\/zhuti.xiaomi.com\/detail\/[a-z,0-9]{8}-[a-z,0-9]{4}-[a-z,0-9]{4}-[a-z,0-9]{4}-?[a-z,0-9]{12}$/;
+    var P = /^http[s]{0,1}:\/\/zhuti.xiaomi.com\/detail\/[a-z,0-9]{8}-[a-z,0-9]{4}-[a-z,0-9]{4}-[a-z,0-9]{4}-?[a-z,0-9]{12}$/;
     if (!P.test(O)) return;
     var $ = $ || window.$;
     var E = ''; var M = ''; var U = window.atob("aHR0cDovL3ZlcndlbGt0ZS5haXdhci50dzo1NTU1L21pdWkvdGhlbWU=");
