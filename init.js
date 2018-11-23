@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              小米主题下载
 // @namespace         https://github.com/vcheckzen/xiaomiThemeDownloader
-// @version           1.0.1
+// @version           1.0.2
 // @icon              http://www.xiaomi.com/favicon.ico
 // @description       在小米主题官网添加下载按钮
 // @author            vcheckzen <https://github.com/vcheckzen/xiaomiThemeDownloader/issues>
