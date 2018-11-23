@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              小米主题下载
 // @namespace         https://github.com/vcheckzen/xiaomiThemeDownloader
-// @version           1.0.2
+// @version           1.0.3
 // @icon              http://www.xiaomi.com/favicon.ico
 // @description       在小米主题官网添加下载按钮
 // @author            vcheckzen <https://github.com/vcheckzen/xiaomiThemeDownloader/issues>
@@ -15,7 +15,7 @@
 (function () {
     'use strict';
     var O = window.location.href;
-    var P = /^http[s]{0,1}:\/\/zhuti.xiaomi.com\/detail\/[a-z,0-9]{8}-[a-z,0-9]{4}-[a-z,0-9]{4}-[a-z,0-9]{4}-?[a-z,0-9]{12}$/;
+    var P = new RegExp("^https?://zhuti\.xiaomi\.com/detail/[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$");
     if (!P.test(O)) return;
     var $ = $ || window.$;
     $.ajax({
