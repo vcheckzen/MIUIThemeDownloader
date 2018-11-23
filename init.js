@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name              小米主题下载
 // @namespace         https://github.com/vcheckzen/xiaomiThemeDownloader
-// @version           1.0.3
+// @version           1.0.4
 // @icon              http://www.xiaomi.com/favicon.ico
 // @description       在小米主题官网添加下载按钮
 // @author            vcheckzen <https://github.com/vcheckzen/xiaomiThemeDownloader/issues>
 // @supportURL        https://github.com/vcheckzen/xiaomiThemeDownloader
 // @contributionURL   https://github.com/vcheckzen/xiaomiThemeDownloader
 // @match             *://zhuti.xiaomi.com/detail/*
-// @require           https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js
+// @require           https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js
 // @run-at            document-end
 // ==/UserScript==
 
