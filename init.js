@@ -18,11 +18,13 @@
     var P = /^http[s]{0,1}:\/\/zhuti.xiaomi.com\/detail\/[a-z,0-9]{8}-[a-z,0-9]{4}-[a-z,0-9]{4}-[a-z,0-9]{4}-?[a-z,0-9]{12}$/;
     if (!P.test(O)) return;
     var $ = $ || window.$;
-    var E = ''; var M = ''; var U = window.atob("aHR0cDovL3ZlcndlbGt0ZS5haXdhci50dzo1NTU1L21pdWkvdGhlbWU=");
-    $.ajax({ url: U, type: "post", data: { "originUrl": O }, async: false, timeout: 2000, success: function (data) { E = data.downloadUrl; M = data.msg; } })
-    if (M == "success") {
-        var btn = "<button class=\"btn-buy J_Push\" type=\"submit\">下载</button>";
-        var form = "<form class=\"detail-buy\" action=\"" + E + "\">" + btn + "</form>";
-        $("#J-downWrap").append(form);
-    }
+    $.ajax({
+        url: window.atob("aHR0cDovL3ZlcndlbGt0ZS5haXdhci50dzo1NTU1L21pdWkvdGhlbWU="), type: "post", data: { "originUrl": O }, timeout: 3000, success: function (data) {
+            if (data.msg == "success") {
+                var btn = "<button class=\"btn-buy J_Push\" type=\"submit\">下载</button>";
+                var form = "<form class=\"detail-buy\" action=\"" + data.downloadUrl + "\">" + btn + "</form>";
+                $("#J-downWrap").append(form);
+            }
+        }
+    })
 })();
