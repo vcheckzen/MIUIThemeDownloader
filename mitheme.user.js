@@ -4,7 +4,7 @@
 // @version           1.0.5
 // @icon              http://www.xiaomi.com/favicon.ico
 // @description       在小米主题官网添加下载按钮
-// @author            vcheckzen <https://github.com/vcheckzen/xiaomiThemeDownloader/issues>
+// @author            https://github.com/vcheckzen/xiaomiThemeDownloader/issues
 // @supportURL        https://github.com/vcheckzen/xiaomiThemeDownloader
 // @contributionURL   https://github.com/vcheckzen/xiaomiThemeDownloader
 // @match             *://zhuti.xiaomi.com/detail/*
