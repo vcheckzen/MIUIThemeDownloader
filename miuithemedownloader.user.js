@@ -17,10 +17,10 @@
     let O = location.href;
     const R = new RegExp('^https?://zhuti.xiaomi.com/detail/[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$');
     if (R.test(O)) {
-        const F = window.atob("emh1dGkueGlhb21pLmNvbS9kZXRhaWw=");
-        const L = window.atob("dGhtLm1hcmtldC54aWFvbWkuY29tL3RobS9kb3dubG9hZC92Mg==");
+        const F = window.atob('emh1dGkueGlhb21pLmNvbS9kZXRhaWw=');
+        const L = window.atob('dGhtLm1hcmtldC54aWFvbWkuY29tL3RobS9kb3dubG9hZC92Mg==');
         GM_xmlhttpRequest({
-            method: "GET",
+            method: 'GET',
             url: O.replace(F, L),
             onload: res => {
                 if (res.status === 200) {
@@ -28,7 +28,7 @@
                     if (data.apiCode === 0) {
                         let btn = '<button class="btn-buy J_Push" type="submit">下载</button>';
                         let form = '<form class="detail-buy" action="' + data.apiData.downloadUrl + '">' + btn + '</form>';
-                        $("#J-downWrap").append(form);
+                        $('#J-downWrap').append(form);
                     }
                 }
             }
