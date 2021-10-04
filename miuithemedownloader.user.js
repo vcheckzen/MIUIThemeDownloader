@@ -6,6 +6,7 @@
 // @description       恢复 MIUI 主题官网的下载按钮
 // @author            https://github.com/vcheckzen
 // @supportURL        https://github.com/vcheckzen/MIUIThemeDownloader/issues
+// @require           https://cdn.jsdelivr.net/npm/jquery/dist/jquery.slim.min.js
 // @match             *zhuti.xiaomi.com/detail/*
 // @grant             GM_xmlhttpRequest
 // @run-at            document-end
