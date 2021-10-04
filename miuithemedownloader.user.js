@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              MIUI 主题下载器
 // @namespace         https://github.com/vcheckzen/MIUIThemeDownloader
-// @version           1.1.0
+// @version           1.1.1
 // @icon              http://www.xiaomi.com/favicon.ico
 // @description       恢复 MIUI 主题官网的下载按钮
 // @author            https://github.com/vcheckzen
